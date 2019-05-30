@@ -15,11 +15,18 @@
   </properties>
   
 <distributionManagement>
-       <repository>
-         <id>internal.repo</id>
-         <name>Internal repo</name>
-         <url>file:///var/lib/jenkins/myartifact/</url>
-       </repository>
+    <repository>
+      <id>releases</id>
+        <name>Internal Releases</name>
+            <!-- CHANGE HERE by your team nexus server for release purpose -->
+              <url>http://35.171.18.38:8081/repository/SAMPLE-REL/</url>
+    </repository>
+    <snapshotRepository>
+       <id>snapshots</id>
+         <name>Internal Snapshot</name>
+          <!-- CHANGE HERE by your team nexus server for snapshots purpose-->
+            <url>http://35.171.18.38:8081/repository/SAMPLE-SNAP/</url>
+    </snapshotRepository>
    </distributionManagement>
 
   <dependencies>
