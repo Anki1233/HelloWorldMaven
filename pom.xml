@@ -16,18 +16,16 @@
   
 <distributionManagement>
     <repository>
-      <id>releases</id>
-        <name>Internal Releases</name>
-            <!-- CHANGE HERE by your team nexus server for release purpose -->
-              <url>http://35.171.18.38:8081/repository/SAMPLE-REL/</url>
+        <id>central</id>
+        <name>c958e174d581-releases</name>
+        <url>http://40.114.37.99:8081/artifactory/MavenReposiroty</url>
     </repository>
     <snapshotRepository>
-       <id>snapshots</id>
-         <name>Internal Snapshot</name>
-          <!-- CHANGE HERE by your team nexus server for snapshots purpose-->
-            <url>http://35.171.18.38:8081/repository/SAMPLE-SNAP/</url>
+        <id>snapshots</id>
+        <name>c958e174d581-snapshots</name>
+        <url>http://40.114.37.99:8081/artifactory/MavenReposiroty</url>
     </snapshotRepository>
-   </distributionManagement>
+</distributionManagement>
 
   <dependencies>
     <dependency>
