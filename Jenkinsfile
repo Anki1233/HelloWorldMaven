@@ -3,14 +3,14 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                withMaven(maven : 'maven'){
+                withMaven(maven : 'apache-maven-3.0.5'){
                         bat "mvn clean compile"
                 }
             }
         }
         stage('Test'){
             steps {
-                withMaven(maven : 'maven'){
+                withMaven(maven : 'apache-maven-3.0.5'){
                         bat "mvn test"
                 }
 
@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-               withMaven(maven : 'maven'){
+               withMaven(maven : 'apache-maven-3.0.5'){
                         bat "mvn deploy"
                 }
 
