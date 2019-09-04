@@ -4,7 +4,7 @@
 
   <groupId>com.test</groupId>
   <artifactId>HelloWorldMaven</artifactId>
-  <version>0.0.18-SNAPSHOT</version>
+  <version>0.0.19-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <name>HelloWorldMaven</name>
@@ -17,13 +17,13 @@
 <distributionManagement>
     <repository>
         <id>central</id>
-        <name>c958e174d581-releases</name>
-        <url>http://40.114.37.99:8081/artifactory/MavenReposiroty</url>
+        <name>3401dfaf05be-releases</name>
+        <url>http://52.172.2.121:8081/artifactory/maven</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
-        <name>c958e174d581-snapshots</name>
-        <url>http://40.114.37.99:8081/artifactory/MavenReposiroty</url>
+        <name>3401dfaf05be-snapshots</name>
+        <url>http://52.172.2.121:8081/artifactory/maven</url>
     </snapshotRepository>
 </distributionManagement>
 
