@@ -17,7 +17,7 @@ pipeline {
             }
         }
         stage('Publish') {
-            steps {
+            //steps {
                //withMaven(maven : 'mvn'){
                  //       sh "mvn deploy"
                 //}
@@ -27,7 +27,7 @@ pipeline {
                              resourceGroup: 'myResourceGroup',
                              sourceDirectory: 'target/'
 
-            }
+            //}
         }
     }
 }
