@@ -18,9 +18,14 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-               withMaven(maven : 'mvn'){
-                        sh "mvn deploy"
-                }
+               //withMaven(maven : 'mvn'){
+                 //       sh "mvn deploy"
+                //}
+                 azureFunctionAppPublish appName: env.Azurefunction,
+                             azureCredentialsId: env.c9c8631b-efcb-4367-9170-c89b3b95bc4b,
+                             filePath: '**/*.json,**/*.jar,bin/*,HttpTrigger-Java/*',
+                             resourceGroup: env.myResourceGroup,
+                             sourceDirectory: 'target/'
 
             }
         }
